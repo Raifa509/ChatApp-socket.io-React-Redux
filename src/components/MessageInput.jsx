@@ -2,7 +2,11 @@ import React from 'react'
 
 function MessageInput() {
   return (
-    <div>MessageInput</div>
+    <>
+    <div className='h-13 bg-black'>
+      a
+    </div>
+    </>
   )
 }
 

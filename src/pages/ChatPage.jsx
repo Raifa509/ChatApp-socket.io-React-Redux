@@ -6,10 +6,12 @@ import MessageInput from '../components/MessageInput'
 function ChatPage() {
   return (
     <>
-      <div className='h-screen bg-sky-100 flex justify-center items-center '>
-         <div className=' w-[30rem] h-[38rem] rounded-2xl shadow-xl'>
+      <div className='h-screen bg-sky-100 flex justify-center items-center chat-container '>
+         <div className=' w-[30rem] h-[38rem]  shadow-xl flex flex-col'>
           <Header/>
-          <MessageList/>
+        <div className="flex-1 overflow-y-auto">
+          <MessageList />
+        </div>
           <MessageInput />
          </div>
       </div>

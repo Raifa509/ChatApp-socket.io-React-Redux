@@ -1,4 +1,6 @@
-*{
-    background-image: url('bg.jpg');
-    font-family: "Google Sans Code", monospace;
+.chat-container,body {
+  background-image: url('bg.jpg');
+  background-size: cover;   
+  background-position: center;
+  font-family: "Google Sans Code", monospace;
 }
