@@ -1,7 +1,11 @@
 import React from 'react'
 import Tooltip from '@mui/material/Tooltip';
+import { useSelector } from 'react-redux';
 
 function Header() {
+
+  const username=useSelector(state=>state.chatReducer.username)
+
   return (
     <>
       <div className="h-18 bg-blue-900 w-full text-white bg-none" style={{ borderRadius: '15px 15px 0px 0px' }}>
@@ -9,10 +13,10 @@ function Header() {
           {/* user profile */}
           <div className='flex justify-center items-center'>
             <div className='bg-black flex justify-center items-center text-2xl me-2' style={{width:'32px',height:'32px',borderRadius:'50%'}}>
-              <h2 className='text-xl'>R</h2>
+              <h2 className='text-xl'>{username?.charAt(0).toUpperCase()}</h2>
             </div>
             <div className='flex flex-col'>
-              <h2 className='text-md'>Raifa</h2>
+              <h2 className='text-md'>{username}</h2>
               <span style={{fontSize:'11px'}}>Online</span>
             </div>
           </div>
