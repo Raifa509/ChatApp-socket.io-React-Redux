@@ -8,8 +8,8 @@ function Header() {
         <div className='flex justify-between items-center p-4 w-full'>
           {/* user profile */}
           <div className='flex justify-center items-center'>
-            <div className='bg-black flex justify-center items-center text-2xl me-2' style={{width:'35px',height:'35px',borderRadius:'50%'}}>
-              <h2>R</h2>
+            <div className='bg-black flex justify-center items-center text-2xl me-2' style={{width:'32px',height:'32px',borderRadius:'50%'}}>
+              <h2 className='text-xl'>R</h2>
             </div>
             <div className='flex flex-col'>
               <h2 className='text-md'>Raifa</h2>
